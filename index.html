@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RPCP Tester</title>
+
+</head>
+<body>
+	<h1>RPCP Tester</h1>
+	<input id="url" type="url" name="url" placeholder="https://example.com" pattern="https://.*" size="50" required>
+	<input id="vHost" type="text" id="name" name="name" placeholder="vHost" required minlength="4" maxlength="200" size="25">
+	<button type="button" onclick="connect()">Connect</button>
+	<button type="button" onclick="wsClose()">Close</button>
+	<br>
+	<input id="methodName" style="margin-top: 20px" placeholder="method" type="text" id="name" name="name" required minlength="4" maxlength="200" size="25">
+	<input id="id" style="margin-top: 20px" type="text" placeholder="id" name="name" required minlength="4" maxlength="200" size="15">
+	<input id="content-type" style="margin-top: 20px" type="text" placeholder="contect-type" name="name" required minlength="4" maxlength="200" size="15">
+	<br>
+	<textarea id="body" style="margin-top: 20px; margin-bottom: 20px" name="Text1" placeholder="body" cols="40" rows="5"></textarea>
+	<br>
+	<button type="button" onclick="sendMessage()">Send Message</button>
+</body>
+
+
+<script src="js/menjangan.js"></script>
+<script src="js/main.js"></script>
+<script src="js/websocket.js"></script>

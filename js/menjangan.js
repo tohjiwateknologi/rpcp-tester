@@ -1,0 +1,3 @@
+function rpcp(method) {
+	method();
+}
